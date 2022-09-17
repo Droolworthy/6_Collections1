@@ -20,12 +20,13 @@ namespace _6_Collections1
                 userInput = Console.ReadLine();
 
                 if (userInput == text)
-
+                {
                     for (int i = 0; i < words.Count; i++)
                     {
                         Console.WriteLine(meaningText);
                         canExitApp = false;
                     }
+                }
                 else
                 {
                     Console.WriteLine("Такого слова нет в программе. Попробуйте ещё раз.");
@@ -33,4 +34,4 @@ namespace _6_Collections1
             }
         }
     }
-}
+} 
