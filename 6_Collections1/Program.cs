@@ -9,8 +9,8 @@ namespace _6_Collections1
         {
             bool canExitApp = true;
             string userInput;
-            string meaningWord = "Изподвыподверта - это проверка на состояние алкогольного опьянения.";
-            string stopProgram = "Изподвыподверта";
+            string meaningText = "Изподвыподверта - это проверка на состояние алкогольного опьянения.";
+            string text = "Изподвыподверта";
             List<string> words = new List<string>();
             words.Add(stopProgram);
 
@@ -19,11 +19,11 @@ namespace _6_Collections1
                 Console.Write("Введите слово: ");
                 userInput = Console.ReadLine();
 
-                if (userInput == stopProgram)
+                if (userInput == text)
 
                     for (int i = 0; i < words.Count; i++)
                     {
-                        Console.WriteLine(meaningWord);
+                        Console.WriteLine(meaningText);
                         canExitApp = false;
                     }
                 else
