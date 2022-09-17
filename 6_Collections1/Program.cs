@@ -9,8 +9,8 @@ namespace _6_Collections1
         {
             bool canExitApp = true;
             string userInput;
-            string meaningText = "Это проверка на состояние алкогольного опьянения.";
             string text = "Изподвыподверта";
+            string meaningText = "Это проверка на состояние алкогольного опьянения.";
             List<string> words = new List<string>();
             words.Add(text);
 
