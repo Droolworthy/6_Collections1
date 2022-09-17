@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 
 namespace _6_Collections1
@@ -12,7 +12,7 @@ namespace _6_Collections1
             string meaningText = "Изподвыподверта - это проверка на состояние алкогольного опьянения.";
             string text = "Изподвыподверта";
             List<string> words = new List<string>();
-            words.Add(stopProgram);
+            words.Add(text);
 
             while (canExitApp)
             {
