@@ -8,24 +8,33 @@ namespace _6_Collections1
         static void Main(string[] args)
         {
             bool canExitApp = true;
+            string stopProgram = "exit";
             string userInput;
-            string meaningText = "Это проверка на состояние алкогольного опьянения.";
-            string text = "Изподвыподверта";
-            List<string> words = new List<string>();
-            words.Add(text);
+            string word = "Изподвыподверта";
+            string meaningWord = "Это проверка на состояние алкогольного опьянения.";
+            string nextWord = "Глюкокортикоиды";
+            string nextMeaningWord = "Группа физиологически активных веществ, регулирующих процессы жизнедеятельности у человека.";
+            string lastWord = "Институционализация";
+            string lastMeaningWord = "Процесс превращения каких-либо отношений в институты, с установленными правилами и нормами.";
+            Dictionary<string, string> definition = new Dictionary<string, string>();
+            definition.Add(word, meaningWord);
+            definition.Add(nextWord, nextMeaningWord);
+            definition.Add(lastWord, lastMeaningWord);
+
+            Console.WriteLine($"Для выхода из словоря введите {stopProgram}");
 
             while (canExitApp)
-            {
+            {   
                 Console.Write("Ввод: ");
                 userInput = Console.ReadLine();
 
-                if (userInput == text)
+                if (definition.ContainsKey(userInput))
                 {
-                    for (int i = 0; i < words.Count; i++)
-                    {
-                        Console.WriteLine(meaningText);
-                        canExitApp = false;
-                    }
+                    Console.WriteLine(definition[userInput]);
+                }
+                else if(userInput == stopProgram)
+                {
+                    canExitApp = false;
                 }
                 else
                 {
@@ -34,4 +43,4 @@ namespace _6_Collections1
             }
         }
     }
-}  
+}
