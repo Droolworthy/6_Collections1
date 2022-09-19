@@ -12,7 +12,7 @@ namespace _6_Collections1
             string userInput;
             string word = "Изподвыподверта";
             string meaningWord = "Это проверка на состояние алкогольного опьянения.";
-            string nextWord = "Глюкокортикоиды";
+            string nextWord = "Глюкокортикостеройды";
             string nextMeaningWord = "Группа физиологически активных веществ, регулирующих процессы жизнедеятельности у человека.";
             string lastWord = "Институционализация";
             string lastMeaningWord = "Процесс превращения каких-либо отношений в институты, с установленными правилами и нормами.";
